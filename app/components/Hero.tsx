@@ -36,15 +36,15 @@ export default function Hero() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tight mb-8 animate-fade-in delay-100">
-            <span className="text-foreground">A Community</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-8 animate-fade-in delay-100">
+            <span className="text-foreground">In a world of AI,</span>
             <br />
-            <span className="gradient-text">Worth Joining</span>
+            <span className="gradient-text">choose IA.</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12 animate-fade-in delay-200">
-            In a world of AI, choose IA. Real humans. Real connections. Real impact.
+            Real humans. Real connections. Real impact.
           </p>
 
           {/* Value Props */}
