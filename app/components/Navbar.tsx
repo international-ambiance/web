@@ -23,7 +23,7 @@ export default function Navbar() {
     { href: '#tokenomics', label: 'Tokenomics' },
     { href: '#how-to-buy', label: 'How to Buy' },
     { href: '#roadmap', label: 'Roadmap' },
-    { href: 'https://github.com/international-ambiance/whitepaper/releases/download/v1.0.2/ia-token-whitepaper.pdf', label: 'Whitepaper', external: true },
+    { href: 'https://github.com/international-ambiance/whitepaper/releases/download/v1.0.3/ia-token-whitepaper.pdf', label: 'Whitepaper', external: true },
   ];
 
   return (

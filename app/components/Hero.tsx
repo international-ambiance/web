@@ -99,7 +99,7 @@ export default function Hero() {
             </Button>
             <Button asChild variant="outline" size="lg" className="h-14 px-10 text-base font-semibold">
               <a
-                href="https://github.com/international-ambiance/whitepaper/releases/download/v1.0.2/ia-token-whitepaper.pdf"
+                href="https://github.com/international-ambiance/whitepaper/releases/download/v1.0.3/ia-token-whitepaper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
