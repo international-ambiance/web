@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { Twitter, Send, MessageCircle, FileText, ExternalLink } from 'lucide-react';
+import { Twitter, Send, MessageCircle, FileText, ExternalLink, Github } from 'lucide-react';
 
 export default function Footer() {
   const navLinks = [
@@ -16,12 +16,14 @@ export default function Footer() {
   const resourceLinks = [
     { href: 'https://github.com/international-ambiance/whitepaper/releases/download/v1.0.3/ia-token-whitepaper.pdf', label: 'Whitepaper' },
     { href: 'https://basescan.org/token/0xe65c6a4eA43e45e69AA507d683b3468833FD07F2', label: 'Basescan' },
+    { href: 'https://github.com/international-ambiance/token', label: 'GitHub' },
   ];
 
   const socialLinks = [
     { href: 'https://twitter.com/IAToken', icon: Twitter, label: 'Twitter' },
     { href: 'https://t.me/IATokenCommunity', icon: Send, label: 'Telegram' },
     { href: 'https://discord.gg/ia-token', icon: MessageCircle, label: 'Discord' },
+    { href: 'https://github.com/international-ambiance/token', icon: Github, label: 'GitHub' },
   ];
 
   return (
