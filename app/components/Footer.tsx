@@ -95,9 +95,19 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-8">
-          <p className="text-muted-foreground text-sm">
-            &copy; {new Date().getFullYear()} IA Token
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+            <p className="text-muted-foreground text-sm">
+              &copy; {new Date().getFullYear()} IA Token
+            </p>
+            <div className="flex gap-6 text-sm text-muted-foreground">
+              <Link href="/terms" className="hover:text-foreground transition-colors">
+                Terms of Service
+              </Link>
+              <Link href="/privacy" className="hover:text-foreground transition-colors">
+                Privacy Policy
+              </Link>
+            </div>
+          </div>
 
           {/* Social Links */}
           <div className="flex gap-2">
