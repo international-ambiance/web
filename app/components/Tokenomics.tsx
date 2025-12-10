@@ -55,11 +55,11 @@ export default function Tokenomics() {
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">Token Details</h3>
               </div>
-              <div className="grid grid-cols-5 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4">
                 {specs.map((spec, index) => (
-                  <div key={index} className="text-center p-4 rounded-xl bg-secondary/30">
-                    <div className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{spec.label}</div>
-                    <div className="text-base font-semibold text-foreground">{spec.value}</div>
+                  <div key={index} className="text-center p-3 sm:p-4 rounded-xl bg-secondary/30">
+                    <div className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-1 sm:mb-2">{spec.label}</div>
+                    <div className="text-sm sm:text-base font-semibold text-foreground">{spec.value}</div>
                   </div>
                 ))}
               </div>
@@ -68,20 +68,20 @@ export default function Tokenomics() {
         </div>
 
         {/* Distribution Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 max-w-5xl mx-auto mb-16">
           {tokenomicsData.map((item, index) => (
             <Card
               key={index}
               className="border-border/30 bg-card/30 backdrop-blur-sm hover:bg-card/50 transition-all duration-500 hover:-translate-y-1"
             >
-              <CardContent className="p-8 text-center">
-                <div className="text-xs text-muted-foreground uppercase tracking-wider mb-4 font-medium">
+              <CardContent className="p-4 sm:p-8 text-center">
+                <div className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-2 sm:mb-4 font-medium">
                   {item.label}
                 </div>
-                <div className={`text-5xl sm:text-6xl font-black bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent mb-2`}>
+                <div className={`text-3xl sm:text-5xl md:text-6xl font-black bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent mb-1 sm:mb-2`}>
                   {item.value}
                 </div>
-                <div className="text-sm text-muted-foreground">{item.desc}</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">{item.desc}</div>
               </CardContent>
             </Card>
           ))}
