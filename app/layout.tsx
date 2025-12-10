@@ -3,13 +3,14 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
-  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "IA Token | Crypto on Base Network",
-  description: "The next generation crypto token on Base Network",
+  title: "IA Token | Impact & Action for a Connected World",
+  description: "A community-driven token for festival access, collective governance, and meaningful connection. Empathy. Generosity. United Love.",
+  keywords: ["IA Token", "community token", "festival access", "governance", "Ethereum", "Base"],
 };
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         {children}
       </body>
     </html>
