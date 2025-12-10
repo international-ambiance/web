@@ -14,7 +14,7 @@ export default function Footer() {
   ];
 
   const resourceLinks = [
-    { href: 'https://github.com/international-ambiance/whitepaper/releases/download/v1.0.4/ia-token-whitepaper.pdf', label: 'Whitepaper' },
+    { href: '/ia-token-whitepaper.pdf', label: 'Whitepaper' },
     { href: 'https://basescan.org/token/0xe65c6a4eA43e45e69AA507d683b3468833FD07F2', label: 'Basescan' },
     { href: 'https://github.com/international-ambiance/token', label: 'GitHub' },
   ];
