@@ -23,6 +23,7 @@ export default function Navbar() {
     { href: '#tokenomics', label: 'Tokenomics' },
     { href: '#how-to-buy', label: 'How to Buy' },
     { href: '#roadmap', label: 'Roadmap' },
+    { href: 'https://github.com/international-ambiance/whitepaper/releases/download/v1.0.2/ia-token-whitepaper.pdf', label: 'Whitepaper', external: true },
   ];
 
   return (
@@ -45,13 +46,25 @@ export default function Navbar() {
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors font-medium text-sm"
-                >
-                  {link.label}
-                </Link>
+                'external' in link && link.external ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-foreground transition-colors font-medium text-sm"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-muted-foreground hover:text-foreground transition-colors font-medium text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                )
               ))}
               <Button asChild className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 border-0">
                 <a
@@ -104,14 +117,27 @@ export default function Navbar() {
           <div className="flex flex-col h-full pt-24 pb-8 px-6">
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-muted-foreground hover:text-foreground hover:bg-accent transition-all font-medium text-lg py-3 px-4 rounded-lg"
-                >
-                  {link.label}
-                </Link>
+                'external' in link && link.external ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-muted-foreground hover:text-foreground hover:bg-accent transition-all font-medium text-lg py-3 px-4 rounded-lg"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-muted-foreground hover:text-foreground hover:bg-accent transition-all font-medium text-lg py-3 px-4 rounded-lg"
+                  >
+                    {link.label}
+                  </Link>
+                )
               ))}
             </div>
             <div className="mt-auto pt-6 border-t border-border">

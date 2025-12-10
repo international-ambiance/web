@@ -90,7 +90,7 @@ export default function HowToBuy() {
           {/* Contract Address */}
           <Card className="border-border/30 bg-card/30 backdrop-blur-sm mb-12">
             <CardContent className="p-8 text-center">
-              <p className="text-sm text-muted-foreground mb-4">Contract Address</p>
+              <p className="text-sm text-muted-foreground mb-4">Contract Address (Base)</p>
               <code className="block text-base font-mono text-primary bg-secondary/30 px-6 py-4 rounded-xl break-all mb-4">
                 0xe65c6a4eA43e45e69AA507d683b3468833FD07F2
               </code>
@@ -113,11 +113,11 @@ export default function HowToBuy() {
             </Button>
             <Button asChild variant="outline" size="lg" className="h-14 px-10 text-base font-semibold">
               <a
-                href="https://etherscan.io/token/0xe65c6a4eA43e45e69AA507d683b3468833FD07F2"
+                href="https://basescan.org/token/0xe65c6a4eA43e45e69AA507d683b3468833FD07F2"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View on Etherscan
+                View on Basescan
                 <ExternalLink className="w-4 h-4 ml-2" />
               </a>
             </Button>

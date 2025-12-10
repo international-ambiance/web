@@ -18,7 +18,7 @@ export default function Tokenomics() {
     { label: 'Name', value: 'Impact & Action' },
     { label: 'Symbol', value: 'IA' },
     { label: 'Supply', value: '1B' },
-    { label: 'Chain', value: 'ETH + Base' },
+    { label: 'Chain', value: 'Base' },
     { label: 'Burn', value: '0.5%' },
   ];
 

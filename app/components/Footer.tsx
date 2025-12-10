@@ -15,7 +15,7 @@ export default function Footer() {
 
   const resourceLinks = [
     { href: 'https://github.com/international-ambiance/whitepaper/releases/download/v1.0.2/ia-token-whitepaper.pdf', label: 'Whitepaper' },
-    { href: 'https://etherscan.io/token/0xe65c6a4eA43e45e69AA507d683b3468833FD07F2', label: 'Etherscan' },
+    { href: 'https://basescan.org/token/0xe65c6a4eA43e45e69AA507d683b3468833FD07F2', label: 'Basescan' },
   ];
 
   const socialLinks = [
@@ -82,7 +82,7 @@ export default function Footer() {
         <div className="mb-16 p-6 rounded-2xl bg-card/50 border border-border/30 max-w-xl">
           <div className="flex items-center gap-3 mb-3">
             <FileText className="w-5 h-5 text-primary" />
-            <span className="text-sm font-medium text-muted-foreground">Contract</span>
+            <span className="text-sm font-medium text-muted-foreground">Contract (Base)</span>
           </div>
           <code className="text-sm font-mono text-foreground/70 break-all">
             0xe65c6a4eA43e45e69AA507d683b3468833FD07F2

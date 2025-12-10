@@ -44,7 +44,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12 animate-fade-in delay-200">
-            We believe in empathy, generosity, and united love as a foundation to heal the planet.
+            In a world of AI, choose IA. Real humans. Real connections. Real impact.
           </p>
 
           {/* Value Props */}
@@ -98,9 +98,14 @@ export default function Hero() {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="h-14 px-10 text-base font-semibold">
-              <Link href="#about">
-                Learn More
-              </Link>
+              <a
+                href="https://github.com/international-ambiance/whitepaper/releases/download/v1.0.2/ia-token-whitepaper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read Whitepaper
+                <ExternalLink className="w-4 h-4 ml-2" />
+              </a>
             </Button>
           </div>
 
@@ -109,7 +114,7 @@ export default function Hero() {
             <CardContent className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-                  Contract Address
+                  Contract Address (Base)
                 </span>
                 <Badge variant="outline" className="bg-green-500/10 text-green-400 border-green-500/20">
                   <Check className="w-3 h-3 mr-1" />
